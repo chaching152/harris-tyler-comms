@@ -1,0 +1,91 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_button_event" id="!wV7J.@si|KCy#ulL2vf" x="0" y="0"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_leds" id="$y,/[NSz-R}u.Za[QVwg"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        # . . . # 
+        # # # # # 
+        # . . . #
+        `</field></block></statement></block><block type="device_button_event" id="i`J_I7WbEoNdV`|?,q]8" x="280" y="-3"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="device_show_leds" id="(^_p;Y@zIx%gyHw}|R7o"><field name="LEDS">`
+        # # # . . 
+        # . . # . 
+        # # # . . 
+        # . . # . 
+        # # # . .
+        `</field></block></statement></block><block type="input_logo_event" id="c}N.`Ew3]zx5#2qV,iPy" x="538" y="-5"><field name="action">TouchButtonEvent.LongPressed</field><statement name="HANDLER"><block type="device_show_leds" id="kfbD7//4]+Tfg8Hz!i-v"><field name="LEDS">`
+        . # # # . 
+        # . . . . 
+        # . . . . 
+        # . . . . 
+        . # # # .
+        `</field></block></statement></block><block type="device_pin_event" id="77fk*2Kl}w9;pIl9D,xs" x="6" y="330"><field name="name">TouchPin.P0</field><statement name="HANDLER"><block type="device_show_leds" id="LLox!B;zutm+a(+5RcCm"><field name="LEDS">`
+        . # # # . 
+        . # . . # 
+        . # . . # 
+        . # . . # 
+        . # # # .
+        `</field></block></statement></block><block type="device_pin_event" id="evM5XTumT65ZLVTc%s-n" x="278" y="320"><field name="name">TouchPin.P1</field><statement name="HANDLER"><block type="device_show_leds" id="QWfhWhPm5brdt|YcG+~1"><field name="LEDS">`
+        # # # . . 
+        # . . . . 
+        # # # . . 
+        # . . . . 
+        # # # . .
+        `</field></block></statement></block><block type="device_pin_event" id="y8@%!Hw|AyC//LfYE/@O" x="533" y="318"><field name="name">TouchPin.P2</field><statement name="HANDLER"><block type="device_show_leds" id="DZUSdDoWQ}}{@.TD=J(D"><field name="LEDS">`
+        . # # # . 
+        . # . . . 
+        . # # # . 
+        . # . . . 
+        . # . . .
+        `</field></block></statement></block><block type="device_forever" id="]|vc5bet}W~Srq.re~)9" x="8" y="649"><statement name="HANDLER"><block type="controls_if" id="F|49g$EKq||9x/MS1.nl"><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="NX_X3h0FJzqFH+!$?uGb"><field name="OP">AND</field><value name="A"><block type="device_get_button2" id="z%*XX8Hmbwq~U+tk1r1/"><field name="NAME">Button.B</field></block></value><value name="B"><block type="device_pin_is_pressed" id="%}5_3mBUX|vAviXu_m|l"><field name="NAME">TouchPin.P1</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="1}}!!fhLnUcWS*`R:j|L"><field name="LEDS">`
+        . # # # . 
+        # . . . . 
+        # . # # . 
+        # . . # . 
+        . # # # .
+        `</field></block></statement></block></statement></block><block type="device_forever" id="*6OU#3K#m.VFg*6;EatV" x="1" y="1054"><statement name="HANDLER"><block type="controls_if" id="h,~dZ#sBF_g|pf)]E0tz"><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="JOPcTlnWG`u0k6YbzDa]"><field name="OP">AND</field><value name="A"><block type="device_get_button2" id="V:eZsB=k#%?$.2MDHVI."><field name="NAME">Button.B</field></block></value><value name="B"><block type="device_pin_is_pressed" id="rw52j{g)2]P/(s,wE@YZ"><field name="NAME">TouchPin.P2</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="GWITikj{}x%D6m46j[s-"><field name="LEDS">`
+        . # . . # 
+        . # . . # 
+        . # # # # 
+        . # . . # 
+        . # . . #
+        `</field></block></statement></block></statement></block><block type="device_button_event" id="p9L?z9.7@L/kU*e|:;2*" x="-1" y="1470"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="device_show_leds" id="w+`8uV$|DaxB[3[@faKg"><field name="LEDS">`
+        . # # # . 
+        . . # . . 
+        . . # . . 
+        . . # . . 
+        . # # # .
+        `</field></block></statement></block><block type="device_forever" id="24a]{u7H-l|%e3|YC%8T" x="3" y="1783"><statement name="HANDLER"><block type="controls_if" id="Knnu:2^29E!s$e$dweRF"><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="#we-0s4n,+]V=d6/w~+x"><field name="OP">AND</field><value name="A"><block type="input_logo_is_pressed" id="13zcncYi@;O]-8P[~3:("/></value><value name="B"><block type="device_get_button2" id="V`v9!F,Ye/iZc-|!7v*s"><field name="NAME">Button.A</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="W.:7bBC1T#PS,Ff*]/Cu"><field name="LEDS">`
+        # # # # # 
+        . . # . . 
+        . . # . . 
+        # . # . . 
+        # # # . .
+        `</field></block></statement></block></statement></block><block type="device_forever" id="hxr58q9ayQ8fG^Yn_NQF" x="2" y="2197"><statement name="HANDLER"><block type="controls_if" id="(y]xhGN+I4/!SqIbE?a|"><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="(r?(ME0Aj6Ep}}!2Yq[w"><field name="OP">AND</field><value name="A"><block type="input_logo_is_pressed" id="![f*uO+$zY7uk:S/nAXy"/></value><value name="B"><block type="device_get_button2" id="@qy=6CjX_U/vo.t.9EmU"><field name="NAME">Button.B</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="X$A2+^SUZ18pC,_%bp%-"><field name="LEDS">`
+        # . . # . 
+        # . # . . 
+        # # . . . 
+        # . # . . 
+        # . . # .
+        `</field></block></statement></block></statement></block><block type="device_gesture_event" id="*p%CzRe#RtB=OA0(7bHh" x="0" y="2614"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="device_show_leds" id="OcHq7xv*eY|Bi7,Dz:vP"><field name="LEDS">`
+        . # . . . 
+        . # . . . 
+        . # . . . 
+        . # . . . 
+        . # # # .
+        `</field></block></statement></block><block type="device_forever" id="c3aw},t_F^`IyPA2eRpD" x="2" y="2941"><statement name="HANDLER"><block type="controls_if" id="g3ZFHc!vHkt=fu{wGVY{"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="PN3tChF}wblqTq5EAi1k"><field name="OP">AND</field><value name="A"><block type="input_logo_is_pressed" id="^k*(f1.ceheVi@$,Pi!a"/></value><value name="B"><block type="device_get_button2" id="w2L:l}Ws?2vhCpBxD}AY"><field name="NAME">Button.AB</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="?X}ZDo*!pc3+_WQPLy8X"><field name="LEDS">`
+        # . . . # 
+        # # . # # 
+        # . # . # 
+        # . . . # 
+        # . . . #
+        `</field></block></statement></block></statement></block><block type="device_forever" id="8k(iz5zN*iZ^i$Sv654L" x="3" y="3370"><statement name="HANDLER"><block type="controls_if" id="8s2jdA!~+b=4kW7n6szd"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="_ST:CX3Li|yQW@O,+RS-"><field name="OP">AND</field><value name="A"><block type="device_pin_is_pressed" id="@@Ti[DdV,D3rjQL}J1,B"><field name="NAME">TouchPin.P0</field></block></value><value name="B"><block type="device_pin_is_pressed" id="@X?gN3$jNY]9~rZ.tLWb"><field name="NAME">TouchPin.P1</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="hb^lA`}*QAP:Vq*X16t*"><field name="LEDS">`
+        # . . . # 
+        # # . . # 
+        # . # . # 
+        # . . # # 
+        # . . . #
+        `</field></block></statement></block></statement></block><block type="device_forever" id="g+~$1Z5Eb@Nfhk@`bO(f" x="4" y="3793"><statement name="HANDLER"><block type="controls_if" id="qVi$2G(MtH@5%Tf~ibw/"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="iVnX|3g,rhFbPJ.*|FMk"><field name="OP">AND</field><value name="A"><block type="device_pin_is_pressed" id="cY]QW_X^Gs1q-DR^DKaj"><field name="NAME">TouchPin.P0</field></block></value><value name="B"><block type="device_pin_is_pressed" id="/9HDl~%AYvu4F_ACqsPo"><field name="NAME">TouchPin.P2</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="=x#@wZi3TFMsWysP!uqo"><field name="LEDS">`
+        . # # . . 
+        # . . # . 
+        # . . # . 
+        # . . # . 
+        . # # . .
+        `</field></block></statement></block></statement></block></xml>
